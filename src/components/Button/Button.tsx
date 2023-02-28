@@ -10,6 +10,7 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({ variant, children }) => {
   const btnClasses = cn(styles.btn, {
     [styles["btn--primary"]]: variant === "primary",
+    [styles["btn--outline"]]: variant === "outline",
   });
 
   return <button className={btnClasses}>{children}</button>;

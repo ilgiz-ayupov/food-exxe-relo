@@ -2,7 +2,12 @@ import React from "react";
 import styles from "./Home.module.scss";
 
 import { Navigation, Sidebar } from "components";
-import { HeroSection, AboutSection, MenuSection } from "sections";
+import {
+  HeroSection,
+  AboutSection,
+  MenuSection,
+  DeliverySection,
+} from "sections";
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +24,7 @@ const Home: React.FC = () => {
         <HeroSection />
         <AboutSection />
         <MenuSection />
+        <DeliverySection />
       </main>
 
       <footer></footer>
