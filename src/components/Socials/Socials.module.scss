@@ -1,0 +1,12 @@
+.socials {
+  display: flex;
+  gap: 2rem;
+
+  &--horizontal {
+    flex-direction: row;
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+}

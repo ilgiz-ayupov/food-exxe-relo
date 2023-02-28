@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: var(--z-header);
+  padding-right: 6.25rem;
+  @media (max-width: 1200px) {
+    padding-right: 4rem;
+  }
+
+  &__nav {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

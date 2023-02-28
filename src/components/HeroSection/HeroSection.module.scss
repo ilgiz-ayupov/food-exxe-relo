@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  color: var(--white);
+  height: 100vh;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(51, 51, 51, 0.4),
+      rgba(51, 51, 51, 0.4)
+    );
+  }
+
+  &__bg {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    left: calc(var(--sidebar-width) + 5%);
+    max-width: 60rem;
+
+    @media(max-width: 768px) {
+      left: 0;
+      padding: 0 1rem;
+    }
+  }
+
+  &__title {
+    font-size: 3.375rem;
+
+    @media(max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.nav {
+  color: var(--white);
+  padding: 1.5rem 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 3.125rem;
+
+  a {
+    transition: color 300ms;
+
+    &:hover {
+      color: var(--brown);
+    }
+  }
+}
