@@ -1,0 +1,32 @@
+.section {
+  margin-bottom: 9.375rem;
+  @media(max-width: 768px) {
+    margin-bottom: 5rem;
+  }
+
+  &__header {
+    margin-bottom: 5rem;
+    @media(max-width: 768px) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 70%;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    :global(.description) {
+      max-width: 60%;
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
