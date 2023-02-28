@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Home.module.scss";
 
 import { Navigation, Sidebar } from "components";
-import { HeroSection, AboutSection } from "sections";
+import { HeroSection, AboutSection, MenuSection } from "sections";
 
 const Home: React.FC = () => {
   return (
@@ -18,6 +18,7 @@ const Home: React.FC = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <MenuSection />
       </main>
 
       <footer></footer>
